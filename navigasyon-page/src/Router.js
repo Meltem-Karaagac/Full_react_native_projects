@@ -11,11 +11,23 @@ import Second from './pages/Second';
 const Stack = createStackNavigator();
 
 function Router() {
+    console.log("Router");
     return (
         <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name="FirstPage" component={First} />
-                <Stack.Screen name="SecondPage" component={Second} />
+            <Stack.Navigator
+                screenOptions={{
+                    headerShown: false,
+                    gestureEnabled: false
+                }}
+            >
+                <Stack.Screen
+                    name="FirstPage"
+                    component={First}
+                />
+                <Stack.Screen
+                    name="SecondPage"
+                    component={Second}
+                />
             </Stack.Navigator>
         </NavigationContainer>
     );
