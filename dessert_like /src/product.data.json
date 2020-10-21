@@ -1,0 +1,30 @@
+[
+    {
+        "id": 0,
+        "userName": "Gullac",
+        "img": "https://starticles.cachefly.net/wp-content/uploads/2019/05/paak-min-1.jpg",
+        "description": "Öncelikle süt şerbetimiz için şeker ve sütümüzü bir tencereye alıp çırpıcı ile karıştırarak orta ateşte şeker eriyene kadar ısıtıyoruz.Kaynatmamıza gerek yok altını kapattıktan sonra vanilyayı ekleyip karıştırıyoruz.Sonra sütü ılımaya bırakıyoruz süt şerbetimiz ne çok sıcak nede çok ılık olası gerekiyor hafif sıcak olması yeterlidir.Sonra uygun bir borcama veya tepsiye ben kare orta boy borcam kullandım.Tepsinin altına sütümüzden döküp parçalara ayırdığımız güllaç yapraklarımızın yarısına her yaprağa ayrı ayrı süt şerbetimizden döküp her yerine gelecek şekilde gezdiriyoruz.Sonra çekilmiş ceviz içini her yerine yayıp tekrar geri kalan güllaç yapraklarına da aynı işlemi uyguluyoruz.Sonra dolaba kaldırıp yarım saat dinlendirip dilimlere ayırıyoruz.Üzerini istediğimiz gibi süslüyoruz. ",
+        "isLiked": true
+    },
+    {
+        "id": 1,
+        "userName": "Kazandibi",
+        "img": "https://turkishdelights.shop/wp-content/uploads/2020/04/kazandibi.jpg",
+        "description": "Öncelikle orta boy bir tencereye bütün malzemeleri alarak karıştırıyoruz.Muhallebi elde ediyoruz. En son tereyağını ve vanilyasını dökerek muhallebimizi 5 dk kadar pişiriyoruz.Orta boy alüminyum tepsiye bolca tereyağı sürüyoruz ve 3 yemek kaşığı kadar tepsiye şeker döküyoruz.Her yeri eşit olmasına özen gösterin.Sonra pişmiş muhallebiyi tepsiye döküyoruz ve orta ateşte sürekli olarak çevirerek muhallebiyi pişiriyoruz.25-30 dk yeterli burda önemli olan tepsiyi sürekli çevirerek kontrollü pişirmek kenar kısımların da pişmesine özen göstermek biraz dibi tutan muhallebinin kokusu biraz çıkar.O zaman hemen ocaktan alıyoruz ve soğumaya bırakıyoruz.Soğuduktan sonra 1-2 saat de buzdolabında bekletiyoruz.Sonra istediğimiz gibi dilimleyip servis yapabilirsiniz. Afiyet olsun. ",
+        "isLiked": false
+    },
+    {
+        "id": 2,
+        "userName": "Karemelli muzlu,bademli hindistan cevizli sutlu tatli ",
+        "img": "https://i.pinimg.com/originals/5a/b7/a2/5ab7a2a5e4b70d5e54d1bca8cbcb7542.jpg",
+        "description": " 1 bardak +1/4 ölçü süt ile çırpıyoruz.Pastanın arasına kremayı sürüp muz badem damla çikolata ve karemel sosla süslüyoruz.Üstüne tekrar diğer keki koyup yine sütle ıslatıyoruz. Krema ile kaplayıp badem muz, damla çikolata, fıstık ezmesi ve karemel sosla süslüyoruz.Pastamız hem kolay hem lezzetli hemde göze hitap ediyor.Deneyenlere afiyet olsun",
+        "isLiked": true
+    },
+    {
+        "id": 3,
+        "userName": "Taze ceviz ve incir eşliğinde sütlaç",
+        "img": "https:refika01.mncdn.com/wp-content/uploads/2015/02/tarif_sutlac.jpg",
+        "description": "Bir litre kaynayan suya  yuzelli gr pirinci atıp  pirinçler suda kendini çekinceye kadar haşlayın. Pirinçler sularını çekip hafif lapalaşmaya başladığı anda bir litre sütü tencereye ilave edin bes tane damla sakızı ve 1 bes bardak toz şekeri de ekleyip yaklaşık yarım saat kısık ateşte kaynatın. Bu aşamadan sonra sütlaçınız olmuş ve servise hazır demektir. Ancak incirli ve taze cevizli sütlaç için asıl tarif yeni başlıyor. Servis yapacağınız fırın kabı yada fırına koymak istemiyorsanız sunum kaplarınızı alın ve her birinin içine dilediğiniz kadar şekeri bol minik kavak incirlerini 4’e bölerek kaplara yerleştirin üzerlerine taze cevizleri de ekleyin ( taze ceviz bulamazsanız normal ceviz de kullanabilirsiniz). Sütlaç karışımınızı sunum kaplarınıza dökün. Eğer cam servis kasesi kullanırsanız oluşan görsel ziyafetten iştahınız açılabilir. Fırın sütlaç sevenlerdenseniz 200 dereceye ısıtılmış fırının üst ızgarasında yaklaşık 5 dakika daha pişirmeniz yeterli olacaktır",
+        "isLiked": false
+    }
+]
