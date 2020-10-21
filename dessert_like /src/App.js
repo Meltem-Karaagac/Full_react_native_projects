@@ -4,7 +4,7 @@ import { ScrollView, SafeAreaView, FlatList, Button } from 'react-native';
 import Poster from "./components/poster";
 import ProductData from "./product.data.json";
 
-
+// inisilize degeri 0 ,useState(0)
 
 
 const App = () => {
@@ -17,7 +17,6 @@ const App = () => {
         <>
             <SafeAreaView>
                 <ScrollView>
-
                     <FlatList
                         keyExtractor={(_, index) => index.toString()}
                         data={ProductData}
