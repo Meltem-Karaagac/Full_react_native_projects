@@ -1,0 +1,17 @@
+div{
+    height: 120px;
+    width: 120px;
+    border: 16px rgb(204,204,204) solid;
+    border-top: 16px blue solid;
+    border-radius: 50%;
+    animation: spin 2s linear infinite
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
