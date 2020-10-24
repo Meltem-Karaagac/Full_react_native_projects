@@ -8,7 +8,7 @@
 body{
     background: url("./img/img.jpg")no-repeat center center fixed;
     background-size: cover;
-    text-align: center;
+    text-align: center; 
 }
 
 h1{
@@ -34,6 +34,7 @@ p{
     font-weight: bold;
     margin-top: 30px;
     font-size: 25px;
+    color: white;
 }
 
 

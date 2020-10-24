@@ -36,8 +36,4 @@ function perfectNumber() {
         document.getElementById("guess").focus();
     }
 }
-function enter(event) {
-    if (event.keyCode === 13) {
-        perfectNumber();
-    }
-}
+
