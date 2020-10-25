@@ -1,9 +1,14 @@
 import axios from 'axios';
-import React, { useEffect } from 'react';
-import { SafeAreaView, View, Text } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { SafeAreaView, View, Text, FlatList } from 'react-native';
+import { RestaurantItem, SearchBar } from '../components';
+
+let originalList = [];
 
 const RestaurantList = (props) => {
-    const { selectedCity } = props.route.params
+    const [restaurantList, setRestaurantList] = useState([]);
+    const { selectedCity } = props.route.params;
+
 
     const fetchRestaurants = () => {
         axios.get(
@@ -13,18 +18,51 @@ const RestaurantList = (props) => {
                     city: selectedCity
                 }
             })
-            .then(response => console.log(response))
-            .catch(err => console.log(err))
+            .then(response => {
+                setRestaurantList(response.data.restaurants);
+                originalList = [...response.data.restaurants];
+            })
     }
 
     useEffect(() => {
         fetchRestaurants();
     }, [])
 
+    const renderRestaurants = ({ item }) => {
+        return (
+            <RestaurantItem
+                restaurant={item}
+                onSelect={() => props.navigation.navigate('Details', { selectedRestaurant: item })}
+            />
+        )
+    }
+
+    function searchRestaurant(search) {
+        const filteredRestaurants = originalList.filter(restaurant => {
+            const text = search.toUpperCase();
+            const restaurantName = restaurant.name.toUpperCase();
+
+            return restaurantName.indexOf(text) > -1;
+        })
+
+        setRestaurantList(filteredRestaurants);
+    }
+
     return (
-        <SafeAreaView>
-            <View>
-                <Text>{selectedCity}</Text>
+        <SafeAreaView style={{ flex: 1 }}>
+            <View style={{ flex: 1 }}>
+                <View>
+                    <Text style={{ margin: 5, fontWeight: 'bold', fontSize: 30 }}>{selectedCity} Restaurants</Text>
+                    <SearchBar
+                        placeholder="Search a restaurant..."
+                        onSearch={(value) => searchRestaurant(value)}
+                    />
+                </View>
+                <FlatList
+                    keyExtractor={(_, index) => index.toString()}
+                    data={restaurantList}
+                    renderItem={renderRestaurants}
+                />
             </View>
         </SafeAreaView>
     )
