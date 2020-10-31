@@ -1,45 +1,50 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react';
 import { SafeAreaView, Text, View, FlatList } from 'react-native';
+import { useDispatch } from 'react-redux'
 
 import { RestaurantItem } from '../components'
 
 const Restaurants = (props) => {
     const [list, setList] = useState([]);
+    const dispatch = useDispatch();
 
     const fetchData = () => {
-        axios.post(
-            'https://worldwide-restaurants.p.rapidapi.com/search',
+        axios.get(
+            'https://opentable.herokuapp.com/api/restaurants',
             {
-                "limit": "30",
-                "language": "en_US",
-                "location_id": "297704",
-                "currency": "USD"
-            },
-            {
-                headers: {
-                    "content-type": "application/json",
-                    "x-rapidapi-host": "worldwide-restaurants.p.rapidapi.com",
-                    "x-rapidapi-key": "e8b94aa0famsh20169f3117020acp1ba769jsn464a1d7d41ca",
+                params: {
+                    "state": "IL"
                 }
             }
         )
-            .then(response => setList(response.data.results.data))
+            .then(response => setList(response.data.restaurants))
             .catch(error => console.log(error))
     }
 
     useEffect(() => fetchData(), []);
 
-    const renderList = ({ item }) => <RestaurantItem item={item} />
+    const renderList = ({ item }) => {
+        return (
+            <RestaurantItem
+                item={item}
+                onAddFavorite={() => dispatch({
+                    type: "ADD_TO_FAVORITE",
+                    payload: { selectedRestaurant: item }
+                })}
+            />
+        )
+    }
 
     return (
-        <SafeAreaView>
-            <View>
-                <Text style={{ fontSize: 25, textAlign: 'center', fontWeight: 'bold' }}>Restaurants</Text>
+        <SafeAreaView style={{ flex: 1 }}>
+            <View style={{ flex: 1 }}>
+                <Text style={{ fontSize: 25, textAlign: 'center', fontWeight: 'bold' }}>Restoranlar</Text>
                 <FlatList
                     keyExtractor={(_, index) => index.toString()}
                     data={list}
                     renderItem={renderList}
+                    ItemSeparatorComponent={() => <View style={{ borderWidth: 0.5, borderColor: '#bdbdbd' }} />}
                 />
             </View>
         </SafeAreaView>
