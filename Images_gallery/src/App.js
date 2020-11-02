@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { SafeAreaView, View, FlatList, Text, StyleSheet, ImageBackground } from "react-native";
+import { SafeAreaView, View, FlatList, Text, StyleSheet, ImageBackground, Button } from "react-native";
 
 import ImageCard from "./components/ImageCard";
 import ImageList from "./images.json";
@@ -21,6 +21,7 @@ const App = () => {
           renderItem={({ item }) => <ImageCard imageItem={item} />}
           numColumns={2}
         />
+
       </View>
     </SafeAreaView>
   )
