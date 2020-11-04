@@ -1,0 +1,52 @@
+[
+    {
+        "id": 0,
+        "title": "ankara",
+        "imgURL": "https://haber.sol.org.tr/sites/default/files/1430484.jpg"
+    },
+    {
+        "id": 1,
+        "title": "nigde",
+        "imgURL": "https://i4.hurimg.com/i/hurriyet/75/1200x675/5d1f14c67af5071798321804.jpg"
+    },
+    {
+        "id": 2,
+        "title": "img1",
+        "imgURL": "https://imageproxy.themaven.net//https%3A%2F%2Fwww.backpacker.com%2F.image%2FMTU3NTE5MTg2NjkwNjQ3MjQy%2Fbp0918gear_kit_mountaineering_christinhealey_4.jpg"
+    },
+    {
+        "id": 3,
+        "title": "img1",
+        "imgURL": "https://mountainplanet.com/uploads/files/merlin_149660880_4e936d10-9f18-4219-91a0-89c3c5a9a3c6-superJumbo.jpg"
+    },
+    {
+        "id": 4,
+        "title": "img1",
+        "imgURL": "https://c.pxhere.com/photos/13/79/skydiving_sport_extreme_sports_parachutist_competition-755906.jpg!d"
+    },
+    {
+        "id": 5,
+        "title": "img1",
+        "imgURL": "https://blog.biletall.com/wp-content/uploads/2015/10/turkiye-kayak-merkezleri.jpg"
+    },
+    {
+        "id": 6,
+        "title": "img1",
+        "imgURL": "https://static.daktilo.com/sites/71/uploads/2019/01/02/1546426295-canon-wiegele-gorseli.jpg"
+    },
+    {
+        "id": 7,
+        "title": "img1",
+        "imgURL": "https://3.bp.blogspot.com/-vWv9C4pNygM/WWp5sJ4haoI/AAAAAAAABD8/P1PKtc6H8kcoiTfyRIhWdPPZpqAYD0T5gCLcBGAs/s1600/20170713_193621_HDR.jpg"
+    },
+    {
+        "id": 8,
+        "title": "img1",
+        "imgURL": "https://images2.fanpop.com/image/photos/9800000/Great-Mountains-mountains-and-waterfalls-9841962-1920-1440.jpg"
+    },
+    {
+        "id": 9,
+        "title": "img1",
+        "imgURL": "https://i.pinimg.com/originals/12/a1/9d/12a19ddeb35817d1df6e1e42f93221b8.jpg"
+    }
+]
