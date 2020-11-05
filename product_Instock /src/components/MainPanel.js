@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { SafeAreaView, View, Text, FlatList, StyleSheet, Alert, TextInput } from 'react-native';
 import proudctData from '../product_data.json'
+
 import { ProductCard } from './ProductCard'
 import SearchBar from './SearchBar'
 const MainPanel = () => {
@@ -22,6 +23,9 @@ const MainPanel = () => {
     }, [searchValue])
     return (
         <SafeAreaView style={{ flex: 1 }}>
+
+
+
             <View style={{ flex: 1 }}>
                 <Text style={styles.banner}>Clarushop</Text>
                 <SearchBar onSearch={(value) => setSearchValue(value)} />
