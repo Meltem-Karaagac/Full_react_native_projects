@@ -3,12 +3,16 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'image_gallery' do
+target 'portfolio_1' do
+  rn_maps_path = '../node_modules/react-native-maps'
+  pod 'react-native-google-maps', :path => rn_maps_path
+  pod 'GoogleMaps'
+  pod 'Google-Maps-iOS-Utils'
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
 
-  target 'image_galleryTests' do
+  target 'portfolio_1Tests' do
     inherit! :complete
     # Pods for testing
   end
@@ -23,10 +27,10 @@ target 'image_gallery' do
   end
 end
 
-target 'image_gallery-tvOS' do
-  # Pods for image_gallery-tvOS
+target 'portfolio_1-tvOS' do
+  # Pods for portfolio_1-tvOS
 
-  target 'image_gallery-tvOSTests' do
+  target 'portfolio_1-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

@@ -1,7 +1,7 @@
 import React from 'react';
-import {TouchableOpacity, Text} from 'react-native';
+import { TouchableOpacity, Text } from 'react-native';
 
-import {button, button_outline} from './styles';
+import { button, button_outline } from './styles';
 
 const Button = (props) => {
   const style = props.noBorder ? button_outline : button
@@ -12,4 +12,4 @@ const Button = (props) => {
   );
 };
 
-export {Button};
+export { Button };
