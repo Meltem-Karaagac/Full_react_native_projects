@@ -7,6 +7,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import First from './pages/First';
 import Second from './pages/Second';
+import Third from "./pages/Third";
 
 const Stack = createStackNavigator();
 
@@ -16,8 +17,8 @@ function Router() {
         <NavigationContainer>
             <Stack.Navigator
                 screenOptions={{
-                    headerShown: false,
-                    gestureEnabled: false
+                    headerShown: true,
+                    gestureEnabled: true
                 }}
             >
                 <Stack.Screen
@@ -27,6 +28,10 @@ function Router() {
                 <Stack.Screen
                     name="SecondPage"
                     component={Second}
+                />
+                <Stack.Screen
+                    name="ThirdPage"
+                    component={Third}
                 />
             </Stack.Navigator>
         </NavigationContainer>
